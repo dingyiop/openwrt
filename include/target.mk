@@ -20,7 +20,9 @@ DEVICE_TYPE?=router
 ##
 DEFAULT_PACKAGES:=\
 	base-files \
+	block-mount \
 	ca-bundle \
+	drill \
 	dropbear \
 	fstools \
 	libc \
@@ -29,6 +31,7 @@ DEFAULT_PACKAGES:=\
 	logd \
 	mtd \
 	netifd \
+	qrencode \
 	uci \
 	uclient-fetch \
 	urandom-seed \
@@ -50,7 +53,7 @@ DEFAULT_PACKAGES.nas:=\
 # @brief Default packages for @DEVICE_TYPE router.
 ##
 DEFAULT_PACKAGES.router:=\
-	dnsmasq \
+	dnsmasq-full \
 	firewall4 \
 	nftables \
 	kmod-nft-offload \
